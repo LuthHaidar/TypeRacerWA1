@@ -217,9 +217,9 @@ function draw() {
         text("wpm: " + total_words * 2, width / 2, height / 2 + 200); // display words per minute
         if (accuracy >= 75) { // display accuracy percentage
             text("accuracy: " + constrain(accuracy_calc(total_chars).toFixed(2), 0, 100) + "%", width / 2, height / 2 + 230); // display accuracy percentage
-    
+
         } else {
-            text("accuracy: " + constrain(accuracy_calc(total_chars).toFixed(2), 0, 100) + "%"+ " (test invalid: low accuracy)", width / 2, height / 2 + 230); // display accuracy percentage
+            text("accuracy: " + constrain(accuracy_calc(total_chars).toFixed(2), 0, 100) + "%" + " (test invalid: low accuracy)", width / 2, height / 2 + 230); // display accuracy percentage
         }
     }
     if (sentence === "") { // generate new sentence if none exists
