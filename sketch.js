@@ -140,7 +140,7 @@ function retrieveLeaderboard() {
 
 
 
-// Draw function to update canvas and handle game logic
+//update canvas and handle game logic
 function draw() {
     resizeCanvas(windowWidth, windowHeight); // resize canvas to fit window size
     if (shake) { // shake effect if user makes a mistake
